@@ -910,8 +910,8 @@ namespace FtxApi
             if (Application != null)
             {
                 Excel.Worksheet Worksheet = (Excel.Worksheet)Application.Sheets.Add();
-                
-             
+
+
                 Worksheet.Cells[1, 1] = "time";
                 Worksheet.Cells[1, 2] = "open";
                 Worksheet.Cells[1, 3] = "close";
@@ -941,7 +941,6 @@ namespace FtxApi
                     Worksheet.Cells[i + 2, 6] = analysis.volume[start + i];
 
                 }
-                Console.WriteLine(NumberOfRow);
             }
             else
             {
@@ -949,6 +948,8 @@ namespace FtxApi
             }
 
         }
+
+
 
         // End of Historical Prices
 
